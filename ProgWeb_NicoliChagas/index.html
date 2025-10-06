@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Estudos de TI | Nicoli Chagas</title>
+  <meta name="description" content="Blog de estudos de TI com resumos, artigos e materiais de apoio." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="index.html">NC</a>
+      <nav>
+        <ul class="menu">
+          <li><a class="ativo" href="index.html">Início</a></li>
+          <li><a href="projetos.html">Artigos</a></li>
+          <li><a href="sobre.html">Sobre/Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="img/hero.jpg" alt="Imagem representativa do blog de TI" />
+      <div class="hero-text container">
+        <h1>Bem-vinda(o) ao <span>Blog de Estudos de TI</span>.</h1>
+        <p>Resumos objetivos, mapas mentais e guias práticos sobre programação, redes, DevOps, cloud e boas práticas. Conteúdo direto ao ponto para aprender e revisar.</p>
+        <a class="botao" href="projetos.html">Ler artigos</a>
+      </div>
+    </section>
+
+    <section class="container grid-3" aria-label="Categorias">
+      <article class="card">
+        <h2>Programação</h2>
+        <p>Fundamentos de HTML, CSS, JavaScript e noções de Python/Java. Dicas de sintaxe, semântica e organização.</p>
+      </article>
+      <article class="card">
+        <h2>Redes & Web</h2>
+        <p>HTTP/HTTPS, REST, DNS e conceitos de segurança e performance no front-end.</p>
+      </article>
+      <article class="card">
+        <h2>DevOps & Cloud</h2>
+        <p>Git & GitHub, Docker, CI/CD e visão geral de observabilidade e boas práticas.</p>
+      </article>
+    </section>
+
+    <section class="container" aria-label="Posts recentes">
+      <div class="cards-grid">
+        <article class="card projeto">
+          <img src="img/hero.jpg" alt="Capa do artigo sobre Git e GitHub" />
+          <div class="card-body">
+            <h2>Guia Rápido: Git & GitHub</h2>
+            <p>Comandos essenciais (init, add, commit, push, pull, branch) e fluxo de trabalho básico para iniciantes.</p>
+            <p><a class="link" href="projetos.html#git">Ler artigo</a></p>
+          </div>
+        </article>
+        <article class="card projeto">
+          <img src="img/hero.jpg" alt="Capa do artigo sobre HTTP e REST" />
+          <div class="card-body">
+            <h2>HTTP & REST: o que revisar</h2>
+            <p>Métodos, status codes e boas práticas para desenhar e consumir APIs.</p>
+            <p><a class="link" href="projetos.html#http">Ler artigo</a></p>
+          </div>
+        </article>
+        <article class="card projeto">
+          <img src="img/hero.jpg" alt="Capa do artigo sobre Docker" />
+          <div class="card-body">
+            <h2>Docker para Iniciantes</h2>
+            <p>Imagens, containers e comandos básicos para subir seu primeiro serviço.</p>
+            <p><a class="link" href="projetos.html#docker">Ler artigo</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Nicoli Chagas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
