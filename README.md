@@ -1,4 +1,5 @@
 **BLOG DE ESTUDOS DE TI**
+---
 Trabalho desenvolvido para a disciplina **Programação Web**, com o objetivo de aplicar os conceitos de **HTML5** e **CSS3** na criação de um site estático, sem o uso de frameworks ou bibliotecas externas.
 
 **Descrição do Projeto:**
